@@ -749,7 +749,7 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor canv
 .cp__c--bl { left: 5px; bottom: 5px; transform: scaleY(-1); }
 .cp__c--br { right: 5px; bottom: 5px; transform: scale(-1, -1); }
 .cp__in { position: absolute; inset: 30px 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.cp__kicker { font-family: var(--f-bn-head); font-weight: 600; font-size: 15px; letter-spacing: 0.04em; color: var(--crimson); }
+.cp__kicker { font-family: var(--f-bn-head); font-weight: 600; font-size: 15px; letter-spacing: normal; color: var(--crimson); }
 .cp__flourish { display: block; width: 120px; height: 12px; margin: 6px auto 0; color: #b4873c; flex: none; }
 .cp__fly { width: 44px; height: 31px; color: #a8792e; flex: none; }
 .cp__fly--sm { width: 30px; height: 21px; margin-top: 14px; opacity: 0.85; }
@@ -889,10 +889,10 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor canv
 .gframe__photo.has-photo img { opacity: 1; }
 .gframe__photo.has-photo .gframe__empty { display: none; }
 .gframe__empty { position: absolute; inset: 0; display: grid; place-items: center; background: var(--ogee) 50% 0 / 60px 90px; color: var(--gold-300); }
-.gframe__empty b { font-family: var(--f-caps); font-weight: 500; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; }
-.plaque { margin-top: 26px; padding: 9px 20px 10px; border-radius: 3px; text-align: center; color: #3a2508; background: linear-gradient(180deg, #ecd391, #b4873c 62%, #8a6326); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 245, 210, 0.75), inset 0 -1px 0 rgba(60, 40, 10, 0.5); }
-.plaque b { display: block; font-family: var(--f-caps); font-weight: 600; font-size: 10.5px; letter-spacing: 0.28em; text-transform: uppercase; }
-.plaque span { display: block; margin-top: 2px; font-family: var(--f-bn); font-size: 14px; }
+.gframe__empty b { font-family: var(--f-bn-head); font-weight: 600; font-size: 15px; letter-spacing: normal; text-transform: none; }
+.plaque { margin-top: 26px; padding: 10px 22px 11px; border-radius: 3px; text-align: center; color: #3a2508; background: linear-gradient(180deg, #ecd391, #b4873c 62%, #8a6326); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 245, 210, 0.75), inset 0 -1px 0 rgba(60, 40, 10, 0.5); }
+.plaque b { display: block; font-family: var(--f-bn-head); font-weight: 700; font-size: 15.5px; line-height: 1.35; letter-spacing: normal; text-transform: none; }
+.plaque span { display: block; margin-top: 4px; font-family: var(--f-bn); font-size: 14px; line-height: 1.4; letter-spacing: normal; }
 
 /* =========================================================
    VI. EVENTS (arched cards)
