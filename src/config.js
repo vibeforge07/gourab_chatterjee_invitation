@@ -86,11 +86,11 @@ const INVITE = {
 
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame (match the photo)
   gallery: [
-    { img: "kolkata-1", shape: "land", place: "Prinsep Ghat", caption: "প্রথম দেখা" },
-    { img: "kolkata-2", shape: "wide", place: "College Street", caption: "পুরোনো বইয়ের গন্ধ" },
-    { img: "kolkata-3", shape: "wide", place: "Howrah Bridge", caption: "নৌকায়, সূর্য ডোবার আগে" },
-    { img: "kolkata-4", shape: "land", place: "Victoria Memorial", caption: "শীতের দুপুর" },
-    { img: "kolkata-5", shape: "land", place: "Shobhabazar Rajbari", caption: "যেখানে হ্যাঁ বলা" },
+    { img: "kolkata-1", shape: "land", place: "প্রথম দেখা", caption: "যেখান থেকে শুরু হলো এক নতুন অধ্যায়" },
+    { img: "kolkata-2", shape: "wide", place: "প্রথম পুজো", caption: "শরতের কাশফুল আর ঢাকের মিষ্টি সুর" },
+    { img: "kolkata-3", shape: "wide", place: "খুনসুটি আর আড্ডা", caption: "এক কাপ কফি আর হাজারো না বলা কথা" },
+    { img: "kolkata-4", shape: "land", place: "একসাথে পথচলা", caption: "হাত ধরে আজীবন চলার মধুর অঙ্গীকার" },
+    { img: "kolkata-5", shape: "land", place: "যেখানে 'হ্যাঁ' বলা", caption: "দুটো মন মিলেমিশে এক হওয়ার চিরন্তন মুহূর্ত" },
   ],
 
   eventsRange: "20 – 24 January 2027",

@@ -10,8 +10,8 @@ export default function Gallery() {
           <img data-asset="chandelier" alt="" loading="lazy" decoding="async" />
         </div>
         <header className="head head--tight">
-          <p className="head__kicker"><b>V</b>Our Kolkata</p>
-          <h2 className="head__title" data-words>আমাদের কলকাতা</h2>
+          <p className="head__kicker"><b>V</b>Our Story</p>
+          <h2 className="head__title" data-words>আমাদের গল্প</h2>
         </header>
         <div className="gallery__viewport">
           <div className="gallery__track" id="galTrack"></div>
