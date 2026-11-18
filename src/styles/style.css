@@ -872,8 +872,10 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor canv
 .gitem:nth-child(even) { margin-top: clamp(24px, 6vh, 80px); }
 .gitem--land .gframe { width: clamp(260px, min(30vw, 46vh), 520px); }
 .gitem--wide .gframe { width: clamp(300px, min(34vw, 50vh), 580px); }
+.gitem--port .gframe { width: clamp(230px, min(26vw, 42vh), 440px); }
 .gitem--land .gframe__photo { aspect-ratio: 4 / 3; }
 .gitem--wide .gframe__photo { aspect-ratio: 3 / 2; }
+.gitem--port .gframe__photo { aspect-ratio: 3 / 4; }
 .plight { position: absolute; left: 0; right: 0; top: -44px; height: 80%; z-index: 3; pointer-events: none; }
 .plight i { position: absolute; left: 50%; top: 0; width: 42%; height: 10px; translate: -50% 0; border-radius: 6px; background: linear-gradient(180deg, #f6e3a8, #b4873c 55%, #6e4d19); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6); }
 .plight::after { content: ""; position: absolute; left: 50%; top: 8px; width: 88%; height: 100%; translate: -50% 0; background: linear-gradient(180deg, rgba(255, 214, 150, 0.3), rgba(255, 214, 150, 0.06) 60%, transparent); clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%); mix-blend-mode: screen; filter: blur(8px); }
@@ -1102,7 +1104,7 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor canv
   .gallery__track { padding: 24px 12vw 16px; gap: 36px; }
   .gitem { scroll-snap-align: none; }
   .gitem:nth-child(even) { margin-top: 0; }
-  .gitem--land .gframe, .gitem--wide .gframe { width: min(80vw, 360px); }
+  .gitem--land .gframe, .gitem--wide .gframe, .gitem--port .gframe { width: min(80vw, 360px); }
 
   .events__grid { grid-template-columns: 1fr; max-width: min(300px, 100% - 36px); }
 
