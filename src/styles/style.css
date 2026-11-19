@@ -3556,6 +3556,21 @@ html.has-cursor canvas {
   color: var(--text-soft);
 }
 
+.ev__badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 14px 5px;
+  border: 1px solid #c9a24a;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #fff6dc, #f3e2b4);
+  font-family: var(--f-bn);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--maroon-600);
+  box-shadow: 0 2px 6px rgba(110, 21, 37, 0.12);
+}
+
 .ev__note {
   margin-top: 10px;
   margin-bottom: 18px;

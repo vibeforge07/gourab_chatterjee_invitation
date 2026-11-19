@@ -159,7 +159,7 @@ export function initWords() {
                  <div class="ev__empty"><svg aria-hidden="true"><use href="#i-${esc(e.icon)}"/></svg></div></div>
                <div class="ev__body">
                  <h3 class="ev__bn">${esc(e.bn)}</h3><p class="ev__en">${esc(e.en)}</p>
-                 <p class="ev__when">${esc(e.when)}</p><p class="ev__where">${esc(e.where)}</p>
+                 <p class="ev__when">${esc(e.when)}</p><p class="ev__where">${esc(e.where)}</p>${e.badge ? `<p class="ev__badge">${esc(e.badge)}</p>` : ""}
                  <p class="ev__note">${esc(e.note)}</p>
                </div>
              </div>

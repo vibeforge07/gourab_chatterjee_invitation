@@ -86,8 +86,8 @@ const INVITE = {
 
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame, "port" = 3:4 portrait (match the photo)
   gallery: [
-    { img: "kolkata-1", shape: "land", place: "প্রথম দেখা", caption: "যেখান থেকে শুরু হলো এক নতুন অধ্যায়" },
-    { img: "kolkata-2", shape: "port", place: "বাড়িতে কালীপুজো", caption: "২৭.০১.২৭" },
+    { img: "kolkata-1", shape: "land", place: "দশ বছরের সম্পর্ক", caption: "দশটা বছর একসাথে, এবার সারাজীবন" },
+    { img: "kolkata-2", shape: "port", place: "পুজোর আড্ডা", caption: "ঠাকুর দেখা, ফুচকা আর অফুরন্ত গল্প" },
     { img: "kolkata-3", shape: "port", place: "খুনসুটি আর আড্ডা", caption: "এক কাপ কফি আর হাজারো না বলা কথা" },
     { img: "kolkata-4", shape: "port", place: "একসাথে পথচলা", caption: "হাত ধরে আজীবন চলার মধুর অঙ্গীকার" },
     { img: "story-haan", shape: "port", place: "যেখানে 'হ্যাঁ' বলা", caption: "দুটো মন মিলেমিশে এক হওয়ার চিরন্তন মুহূর্ত" },
@@ -103,7 +103,8 @@ const INVITE = {
       when: "Wednesday, 27 January · 11:00 AM",
       where: "চট্টরাজ বাড়ি",
       mapQuery: "Serampore, Hooghly",
-      note: "ধান-দুব্বো আর অনেকটা আশীর্বাদ নিয়ে আসবেন।",
+      badge: "বাড়িতে কালীপুজো · ২৭.০১.২৭",
+      note: "সেদিন বাড়িতে মায়ের পুজো। আশীর্বাদ নিয়ে আসবেন, প্রসাদ নিয়ে যাবেন।",
     },
     {
       bn: "গায়ে হলুদ",
