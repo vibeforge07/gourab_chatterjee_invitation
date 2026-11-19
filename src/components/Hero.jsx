@@ -59,7 +59,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <a className="scroll-cue hx" href="#couple" aria-label="Scroll down"><span>Scroll</span><i></i></a>
+        <a className="scroll-cue hx" href="#couple" aria-label="Keep scrolling"><span>Keep scrolling</span><i></i></a>
       </section>
 
       <div className="seam" aria-hidden="true"><img data-asset="garland" alt="" /></div>
