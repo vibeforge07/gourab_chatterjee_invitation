@@ -195,7 +195,7 @@ export function initWords() {
   const mapFrame = $("#mapFrame");
   if (mapFrame) mapFrame.src = `https://maps.google.com/maps?q=${enc(C.venue.mapQuery)}&z=14&output=embed`;
   const mapBtn = $("#mapBtn");
-  if (mapBtn) mapBtn.href = mapsLink(C.venue.mapQuery);
+  if (mapBtn) mapBtn.href = C.venue.mapUrl || mapsLink(C.venue.mapQuery);
   const calBtn = $("#calBtn");
   if (calBtn) {
     calBtn.href = (() => {

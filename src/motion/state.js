@@ -27,7 +27,7 @@ const esc = (s) =>
         "'": "&#39;",
       }[c])
   );
-const mapsLink = (q) => `https://www.google.com/maps/search/?api=1&query=${enc(q)}`;
+const mapsLink = (q) => (/^https?:\/\//i.test(q) ? q : `https://www.google.com/maps/search/?api=1&query=${enc(q)}`);
 const G = gsap;
 const lite = !fine || innerWidth <= 760;
 
