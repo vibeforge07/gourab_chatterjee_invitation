@@ -1230,7 +1230,7 @@ html.has-cursor canvas {
 }
 
 .frame--hero {
-  width: clamp(300px, 39vw, 680px);
+  width: clamp(320px, min(45vw, 86vh), 800px);
 }
 
 .frame__photo {
@@ -4179,8 +4179,13 @@ html.has-cursor canvas {
 
   .frame--hero {
     order: 1;
-    width: min(94vw, 420px);
+    width: min(100vw, 480px);
     margin: 6px 0 10px;
+  }
+
+  .hero__name--l,
+  .hero__name--r {
+    justify-self: center;
   }
 
   .hero__name {
@@ -4371,7 +4376,7 @@ html.has-cursor canvas {
   }
 
   .gallery__track {
-    padding: 24px 12vw 16px;
+    padding: 62px 12vw 16px;
     gap: 36px;
   }
 
@@ -4552,4 +4557,14 @@ html.has-cursor canvas {
 .is-lite [class*="music"] {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
+}
+/* Venues: wedding on top, reception below on phones */
+@media (max-width: 760px) {
+  .venue__card .venue__when {
+    text-wrap: balance;
+  }
+
+  .venue__duo {
+    grid-template-columns: 1fr;
+  }
 }
