@@ -46,7 +46,8 @@ export default function Hero() {
 
             <figure className="frame frame--hero" id="heroFrame" data-depth="0.03">
               <div className="frame__photo">
-                <img data-asset="couple" alt="Gourab and Shreya" />
+                <img className="frame__blur" data-asset="couple" alt="" aria-hidden="true" />
+                <img className="frame__main" data-asset="couple" alt="Gourab and Shreya" />
                 <div className="frame__empty"><span className="mono" data-mono></span></div>
               </div>
               <img className="frame__art" data-asset="frame-gold" alt="" />

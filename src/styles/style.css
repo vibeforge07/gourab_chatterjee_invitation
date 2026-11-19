@@ -1232,8 +1232,25 @@ html.has-cursor canvas {
   transition: opacity 0.8s ease;
 }
 
-.frame--hero .frame__photo img {
-  object-position: 50% 0%;
+/* Hero: portrait photo in a landscape window. Fit it by height so the
+   groom's topor and both figures stay in; a blurred copy fills the sides. */
+.frame--hero .frame__photo img.frame__blur {
+  object-fit: cover;
+  object-position: 50% 35%;
+  filter: blur(16px) brightness(0.55) saturate(1.1);
+  scale: 1.2;
+}
+
+.frame--hero .frame__photo img.frame__main {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  translate: -50% 0;
+  width: auto;
+  height: 106%;
+  max-width: none;
+  object-fit: contain;
+  box-shadow: 0 0 40px 18px rgba(20, 3, 7, 0.55);
 }
 
 .frame__photo.has-photo img {
