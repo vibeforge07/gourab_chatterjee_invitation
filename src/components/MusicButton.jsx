@@ -1,7 +1,7 @@
 export default function MusicButton() {
   return (
     <>
-      <audio id="bgMusic" src="/assets/bgm.mp3" preload="none" loop></audio>
+      <audio id="bgMusic" src="/assets/bgm.mp3" preload="auto" loop></audio>
       <button className="music-btn" id="musicBtn" type="button" aria-label="Toggle background music" title="মিউজিক অন / অফ">
         <span className="music-btn__disc">
           <svg className="music-btn__icon music-btn__icon--play" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

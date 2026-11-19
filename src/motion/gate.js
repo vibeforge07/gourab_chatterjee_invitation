@@ -124,14 +124,28 @@ export function initGate() {
     });
   }
 
-  // Backup fallback: first user tap on the document after gate open also triggers music if autoplay blocked
-  document.addEventListener(
-    "pointerdown",
-    () => {
-      if (state.opened && !state.musicStarted) startMusic();
-    },
-    { passive: true }
-  );
+  if (bgMusic) {
+    bgMusic.addEventListener("ended", () => {
+      bgMusic.currentTime = 0;
+      bgMusic.play().catch(() => {});
+    });
+  }
+
+  // Backup fallback: any tap/scroll on the document keeps music playing if opened and not muted
+  ["pointerdown", "touchstart", "click"].forEach((evt) => {
+    document.addEventListener(
+      evt,
+      () => {
+        if (!state.opened) return;
+        if (!state.musicStarted) {
+          startMusic();
+        } else if (bgMusic && bgMusic.paused && musicBtn && !musicBtn.classList.contains("is-muted")) {
+          bgMusic.play().catch(() => {});
+        }
+      },
+      { passive: true }
+    );
+  });
 
   function openGate() {
     if (state.opened) return;

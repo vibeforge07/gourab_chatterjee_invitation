@@ -349,7 +349,7 @@ export function initScenes() {
       ".closing__arch .arch__photo",
       { scale: 1 },
       {
-        scale: 1.34,
+        scale: 1.04,
         ease: "none",
         scrollTrigger: { trigger: ".closing", start: "top 60%", end: "bottom bottom", scrub: true },
       }
