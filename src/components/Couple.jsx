@@ -15,8 +15,8 @@ export default function Couple() {
         <article className="person person--bride">
           <div className="arch arch--photo" data-arch>
             <div className="arch__inner">
-              <img className="arch__photo" data-asset="bride" alt="Ahana" style={{ objectPosition: "47% 30%" }} />
-              <div className="arch__empty"><span className="initial" data-k="couple.initials.0"></span></div>
+              <img className="arch__photo" data-asset="bride" alt="Shreya" style={{ objectPosition: "47% 30%" }} />
+              <div className="arch__empty"><span className="initial" data-k="couple.initials.1"></span></div>
             </div>
           </div>
           <div className="person__text">
@@ -35,8 +35,8 @@ export default function Couple() {
         <article className="person person--groom">
           <div className="arch arch--photo" data-arch>
             <div className="arch__inner">
-              <img className="arch__photo" data-asset="groom" alt="Ritwik" style={{ objectPosition: "44% 28%" }} />
-              <div className="arch__empty"><span className="initial" data-k="couple.initials.1"></span></div>
+              <img className="arch__photo" data-asset="groom" alt="Gourab" style={{ objectPosition: "44% 28%" }} />
+              <div className="arch__empty"><span className="initial" data-k="couple.initials.0"></span></div>
             </div>
           </div>
           <div className="person__text">

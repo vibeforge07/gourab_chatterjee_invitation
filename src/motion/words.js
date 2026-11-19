@@ -14,7 +14,7 @@ export function initWords() {
     const v = get(n.dataset.k);
     if (v != null) n.textContent = v;
   });
-  document.title = `${C.couple.bride.first} & ${C.couple.groom.first} · শুভ বিবাহ`;
+  document.title = `${C.couple.groom.first} & ${C.couple.bride.first} · শুভ বিবাহ`;
 
   const el = (tag, cls, html) => {
     const n = document.createElement(tag);
@@ -54,7 +54,7 @@ export function initWords() {
       `<p class="cp__inv">শ্রী শ্রী প্রজাপতয়ে নমঃ</p>` +
       `<p class="cp__big foil">শুভ বিবাহ</p>` +
       `<svg class="cp__flourish"><use href="#flourish"/></svg>` +
-      `<p class="cp__names">${esc(K.bride)}<i>ও</i>${esc(K.groom)}</p>` +
+      `<p class="cp__names">${esc(K.groom)}<i>ও</i>${esc(K.bride)}</p>` +
       `<p class="cp__date">${esc(W0.short)}</p>`,
     mantra:
       `<svg class="cp__lotus"><use href="#lotusline"/></svg>` +
@@ -65,8 +65,8 @@ export function initWords() {
       `<svg class="cp__fly cp__fly--sm"><use href="#butterfly"/></svg>`,
     photo:
       `<p class="cp__kicker">শুভ পরিণয়</p>` +
-      `<figure class="cp__photo"><img data-asset="couple" alt="${esc(K.bride)} ও ${esc(K.groom)}" loading="lazy" decoding="async"></figure>` +
-      `<p class="cp__pair">${esc(K.bride)}<i>&amp;</i>${esc(K.groom)}</p>` +
+      `<figure class="cp__photo"><img data-asset="couple" alt="${esc(K.groom)} ও ${esc(K.bride)}" loading="lazy" decoding="async"></figure>` +
+      `<p class="cp__pair">${esc(K.groom)}<i>&amp;</i>${esc(K.bride)}</p>` +
       `<svg class="cp__flourish"><use href="#flourish"/></svg>`,
     bride: family(K.brideSide),
     groom: family(K.groomSide),

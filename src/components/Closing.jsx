@@ -22,7 +22,7 @@ export default function Closing() {
           <svg className="closing__fly"><use href="#butterfly" /></svg>
           <h2 className="closing__line foil" data-k="closing.line"></h2>
           <p className="closing__names">
-            <span data-k="couple.bride.first"></span> <i>&amp;</i> <span data-k="couple.groom.first"></span>
+            <span data-k="couple.groom.first"></span> <i>&amp;</i> <span data-k="couple.bride.first"></span>
           </p>
           <svg className="lotusline"><use href="#lotusline" /></svg>
           <p className="closing__date" data-k="wedding.short"></p>

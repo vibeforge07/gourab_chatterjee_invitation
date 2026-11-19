@@ -28,9 +28,9 @@ export default function Gate() {
         <p className="gate__invocation">প্রজাপতয়ে নমঃ</p>
         <h1 className="gate__title foil">শুভ বিবাহ</h1>
         <p className="gate__names">
-          <span data-k="couple.bride.first"></span>
-          <i>&amp;</i>
           <span data-k="couple.groom.first"></span>
+          <i>&amp;</i>
+          <span data-k="couple.bride.first"></span>
         </p>
         <p className="gate__date" data-k="wedding.short"></p>
         <button className="gate__btn" id="openBtn" type="button">
