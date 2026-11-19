@@ -144,6 +144,31 @@ const INVITE = {
     { time: "2:30 AM", title: "Sindoor Daan", bn: "সিঁদুরদান", note: "বিয়ের সবচেয়ে চুপচাপ মুহূর্ত। ফোনটা একটু নামিয়ে রাখবেন।" },
   ],
 
+  venues: [
+    {
+      kicker: "বিবাহ বাসর",
+      enKicker: "Wedding Ceremony",
+      name: "Ganges Vision",
+      address: "Serampore, Hooghly",
+      when: "বৃহস্পতিবার, ২৮শে জানুয়ারি ২০২৭ · রাত ৮:০০ টা",
+      lagna: "শুভ লগ্ন রাত ১টা ২০ মিনিট",
+      note: "গঙ্গাবক্ষে অপরূপ পরিবেশ, পার্কিং ব্যবস্থা রয়েছে।",
+      mapQuery: "Ganges Vision, Serampore",
+      mapUrl: "https://share.google/JE14yvlLgCd84LQK3",
+    },
+    {
+      kicker: "প্রীতিভোজ",
+      enKicker: "Reception Party",
+      name: "Bengai",
+      address: "Bengai, West Bengal 722161",
+      when: "শনিবার, ৩০শে জানুয়ারি ২০২৭ · সন্ধ্যা ৭:৩০ টা",
+      lagna: "",
+      note: "ভাত-কাপড়ের পর জমিয়ে খাওয়া-দাওয়া ও আনন্দানুষ্ঠান।",
+      mapQuery: "Bengai, West Bengal 722161",
+      mapUrl: "https://maps.app.goo.gl/tWHADwV5ho5dBBMMA?g_st=ac",
+    },
+  ],
+
   venue: {
     name: "Ganges Vision",
     address: "Serampore, Hooghly",

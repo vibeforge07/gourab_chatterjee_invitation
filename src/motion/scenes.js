@@ -280,26 +280,37 @@ export function initScenes() {
     });
 
     // venue
-    G.fromTo(
-      ".frame--venue",
-      { x: -150, z: -480, rotateY: 38, autoAlpha: 0 },
-      {
-        x: 0,
-        z: 0,
-        rotateY: 0,
-        autoAlpha: 1,
-        ease: "power2.out",
-        scrollTrigger: { trigger: ".venue__grid", start: "top 98%", end: "top 35%", scrub: 1 },
-      }
-    );
-    G.from(".venue__info > *", {
-      autoAlpha: 0,
-      y: 30,
-      duration: 1.1,
-      stagger: 0.1,
-      ease: "power3.out",
-      scrollTrigger: { trigger: ".venue__grid", start: "top 75%" },
-    });
+    if ($(".venue__card")) {
+      G.from(".venue__card", {
+        autoAlpha: 0,
+        y: 40,
+        duration: 1.1,
+        stagger: 0.2,
+        ease: "power3.out",
+        scrollTrigger: { trigger: ".venue__duo", start: "top 80%" },
+      });
+    } else if ($(".frame--venue")) {
+      G.fromTo(
+        ".frame--venue",
+        { x: -150, z: -480, rotateY: 38, autoAlpha: 0 },
+        {
+          x: 0,
+          z: 0,
+          rotateY: 0,
+          autoAlpha: 1,
+          ease: "power2.out",
+          scrollTrigger: { trigger: ".venue__grid", start: "top 98%", end: "top 35%", scrub: 1 },
+        }
+      );
+      G.from(".venue__info > *", {
+        autoAlpha: 0,
+        y: 30,
+        duration: 1.1,
+        stagger: 0.1,
+        ease: "power3.out",
+        scrollTrigger: { trigger: ".venue__grid", start: "top 75%" },
+      });
+    }
     if ($(".dress") && $(".sw")) {
       G.from(".sw", {
         autoAlpha: 0,

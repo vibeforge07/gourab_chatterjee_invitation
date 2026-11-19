@@ -161,7 +161,6 @@ export function initWords() {
                  <h3 class="ev__bn">${esc(e.bn)}</h3><p class="ev__en">${esc(e.en)}</p>
                  <p class="ev__when">${esc(e.when)}</p><p class="ev__where">${esc(e.where)}</p>
                  <p class="ev__note">${esc(e.note)}</p>
-                 <a class="btn btn--line" href="${mapsLink(e.mapQuery)}" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Directions</a>
                </div>
              </div>
            </div>`
@@ -190,6 +189,38 @@ export function initWords() {
     C.dress.swatches.forEach((s) =>
       swatchesEl.appendChild(el("div", "sw", `<i style="--c:${esc(s.hex)}"></i><span>${esc(s.name)}</span>`))
     );
+  }
+
+  const venueDuo = $("#venueDuo");
+  if (venueDuo && C.venues) {
+    C.venues.forEach((v) => {
+      venueDuo.appendChild(
+        el(
+          "article",
+          "venue__card",
+          `<div class="venue__card-kicker">
+             <span class="venue__kicker-bn">${esc(v.kicker)}</span>
+             <span class="venue__kicker-en">${esc(v.enKicker)}</span>
+           </div>
+           <h3 class="venue__name">${esc(v.name)}</h3>
+           <p class="venue__addr">${esc(v.address)}</p>
+           <p class="venue__when">${esc(v.when)}</p>
+           ${v.lagna ? `<p class="venue__lagna">${esc(v.lagna)}</p>` : ""}
+           <p class="venue__note">${esc(v.note)}</p>
+           <div class="venue__map">
+             <iframe
+               title="${esc(v.name)} map"
+               loading="lazy"
+               referrerPolicy="no-referrer-when-downgrade"
+               src="https://maps.google.com/maps?q=${enc(v.mapQuery)}&z=14&output=embed"
+             ></iframe>
+           </div>
+           <a class="btn btn--crimson" href="${mapsLink(v.mapUrl || v.mapQuery)}" target="_blank" rel="noopener">
+             <svg><use href="#i-pin"/></svg>Open in Google Maps
+           </a>`
+        )
+      );
+    });
   }
 
   const mapFrame = $("#mapFrame");
