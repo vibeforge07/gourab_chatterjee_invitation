@@ -4157,8 +4157,8 @@ html.has-cursor canvas {
   }
 
   .hero__content {
-    padding-top: 76px;
-    padding-bottom: 96px;
+    padding-top: clamp(60px, 8vh, 76px);
+    padding-bottom: clamp(44px, 6vh, 68px);
   }
 
   .hero__houses {
@@ -4171,22 +4171,30 @@ html.has-cursor canvas {
   }
 
   .hero__row {
-    grid-template-columns: minmax(0, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     gap: 0;
-    align-content: center;
   }
 
   .frame--hero {
     order: 1;
-    width: min(100vw, 480px);
-    justify-self: start;
-    margin: 6px 0 10px calc(50% - min(100vw, 480px) / 2);
+    width: min(88vw, 380px);
+    margin: 4px auto clamp(10px, 2vh, 18px);
+    justify-self: center;
   }
 
   .hero__name--l,
   .hero__name--r {
-    justify-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .hero__name {
@@ -4207,8 +4215,16 @@ html.has-cursor canvas {
     order: 3;
   }
 
-  .name {
-    font-size: clamp(48px, 14vw, 74px);
+  .hero__name .name {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(40px, 11vw, 62px);
+    line-height: 1.05;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero__parent {
@@ -4216,12 +4232,16 @@ html.has-cursor canvas {
   }
 
   .hero__amp {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
     font-family: var(--f-serif);
     font-style: italic;
-    font-size: 32px;
+    font-size: clamp(24px, 6vw, 32px);
     line-height: 1;
-    margin: -2px 0 -4px;
+    margin: 1px auto 2px;
   }
 
   .scroll-cue span {

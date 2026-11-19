@@ -87,7 +87,7 @@ const INVITE = {
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame, "port" = 3:4 portrait (match the photo)
   gallery: [
     { img: "kolkata-1", shape: "land", place: "প্রথম দেখা", caption: "যেখান থেকে শুরু হলো এক নতুন অধ্যায়" },
-    { img: "kolkata-2", shape: "port", place: "প্রথম পুজো", caption: "শরতের কাশফুল আর ঢাকের মিষ্টি সুর" },
+    { img: "kolkata-2", shape: "port", place: "বাড়িতে কালীপুজো", caption: "২৭.০১.২৭" },
     { img: "kolkata-3", shape: "port", place: "খুনসুটি আর আড্ডা", caption: "এক কাপ কফি আর হাজারো না বলা কথা" },
     { img: "kolkata-4", shape: "port", place: "একসাথে পথচলা", caption: "হাত ধরে আজীবন চলার মধুর অঙ্গীকার" },
     { img: "story-haan", shape: "port", place: "যেখানে 'হ্যাঁ' বলা", caption: "দুটো মন মিলেমিশে এক হওয়ার চিরন্তন মুহূর্ত" },
