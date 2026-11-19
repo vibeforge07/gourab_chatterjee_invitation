@@ -41,13 +41,12 @@ export default function Hero() {
           <div className="hero__row">
             <div className="hero__name hero__name--l">
               <h2 className="name foil-live" data-split data-k="couple.groom.first"></h2>
-              <p className="hero__parent hx">Son of <span data-k="couple.groom.parents"></span></p>
+              <p className="hero__parent hx"><span className="hero__rel">Son of</span><span data-k="couple.groom.parents"></span></p>
             </div>
 
             <figure className="frame frame--hero" id="heroFrame" data-depth="0.03">
               <div className="frame__photo">
-                <img className="frame__blur" data-asset="couple" alt="" aria-hidden="true" />
-                <img className="frame__main" data-asset="couple" alt="Gourab and Shreya" />
+                <img data-asset="couple-hero" alt="Gourab and Shreya" />
                 <div className="frame__empty"><span className="mono" data-mono></span></div>
               </div>
               <img className="frame__art" data-asset="frame-gold" alt="" />
@@ -56,7 +55,7 @@ export default function Hero() {
             <div className="hero__name hero__name--r">
               <span className="hero__amp foil">&amp;</span>
               <h2 className="name foil-live" data-split data-k="couple.bride.first"></h2>
-              <p className="hero__parent hx">Daughter of <span data-k="couple.bride.parents"></span></p>
+              <p className="hero__parent hx"><span className="hero__rel">Daughter of</span><span data-k="couple.bride.parents"></span></p>
             </div>
           </div>
         </div>

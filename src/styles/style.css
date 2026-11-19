@@ -1105,13 +1105,15 @@ html.has-cursor canvas {
 }
 
 .hero__name--l {
-  align-items: flex-end;
-  text-align: right;
+  justify-self: end;
+  align-items: center;
+  text-align: center;
 }
 
 .hero__name--r {
-  align-items: flex-start;
-  text-align: left;
+  justify-self: start;
+  align-items: center;
+  text-align: center;
 }
 
 .name {
@@ -1145,6 +1147,24 @@ html.has-cursor canvas {
 
 .foil-live {
   filter: drop-shadow(0 2px 1px rgba(40, 10, 0, 0.6)) drop-shadow(0 18px 40px rgba(0, 0, 0, 0.7));
+}
+
+.hero__parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.hero__rel {
+  font-family: var(--f-caps);
+  font-style: normal;
+  font-size: 0.68em;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-100);
 }
 
 .hero__parent {
@@ -1232,25 +1252,8 @@ html.has-cursor canvas {
   transition: opacity 0.8s ease;
 }
 
-/* Hero: portrait photo in a landscape window. Fit it by height so the
-   groom's topor and both figures stay in; a blurred copy fills the sides. */
-.frame--hero .frame__photo img.frame__blur {
-  object-fit: cover;
-  object-position: 50% 35%;
-  filter: blur(16px) brightness(0.55) saturate(1.1);
-  scale: 1.2;
-}
-
-.frame--hero .frame__photo img.frame__main {
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  translate: -50% 0;
-  width: auto;
-  height: 106%;
-  max-width: none;
-  object-fit: contain;
-  box-shadow: 0 0 40px 18px rgba(20, 3, 7, 0.55);
+.frame--hero .frame__photo img {
+  object-position: 50% 0%;
 }
 
 .frame__photo.has-photo img {
