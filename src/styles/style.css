@@ -4171,7 +4171,7 @@ html.has-cursor canvas {
   }
 
   .hero__row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     justify-items: center;
     gap: 0;
     align-content: center;
@@ -4180,7 +4180,8 @@ html.has-cursor canvas {
   .frame--hero {
     order: 1;
     width: min(100vw, 480px);
-    margin: 6px 0 10px;
+    justify-self: start;
+    margin: 6px 0 10px calc(50% - min(100vw, 480px) / 2);
   }
 
   .hero__name--l,
@@ -4566,5 +4567,14 @@ html.has-cursor canvas {
 
   .venue__duo {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Phones: when the browser bar hides, the screen grows past 100svh.
+   Extend the pinned sections so their background fills that strip. */
+@supports (height: 100lvh) {
+  #letter,
+  #gallery {
+    padding-bottom: calc(100lvh - 100svh);
   }
 }

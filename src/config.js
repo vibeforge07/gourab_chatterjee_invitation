@@ -90,7 +90,7 @@ const INVITE = {
     { img: "kolkata-2", shape: "port", place: "প্রথম পুজো", caption: "শরতের কাশফুল আর ঢাকের মিষ্টি সুর" },
     { img: "kolkata-3", shape: "port", place: "খুনসুটি আর আড্ডা", caption: "এক কাপ কফি আর হাজারো না বলা কথা" },
     { img: "kolkata-4", shape: "port", place: "একসাথে পথচলা", caption: "হাত ধরে আজীবন চলার মধুর অঙ্গীকার" },
-    { img: "kolkata-5", shape: "port", place: "যেখানে 'হ্যাঁ' বলা", caption: "দুটো মন মিলেমিশে এক হওয়ার চিরন্তন মুহূর্ত" },
+    { img: "story-haan", shape: "port", place: "যেখানে 'হ্যাঁ' বলা", caption: "দুটো মন মিলেমিশে এক হওয়ার চিরন্তন মুহূর্ত" },
   ],
 
   eventsRange: "28 – 30 January 2027",
