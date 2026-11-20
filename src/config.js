@@ -30,6 +30,7 @@ const INVITE = {
     weekday: "Thursday",
     dateLine: "Thursday, 28 January 2027",
     short: "28 · 01 · 2027",
+    nightKicker: "28 January, night",
     city: "Serampore",
     bnDay: "বৃহস্পতিবার",
     bnDate: "২৮শে জানুয়ারি",
